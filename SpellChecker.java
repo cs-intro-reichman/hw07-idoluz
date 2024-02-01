@@ -51,7 +51,7 @@ public class SpellChecker {
 		String ans  = "";
 		int temp = 0;
 		int minLev = threshold + 1;
-		word.toLowerCase();
+		 word = word.toLowerCase();
 		for (int i = 0; i < dictionary.length; i++) {
 			
 			if ((temp = (levenshtein(word, dictionary[i]))) < minLev) {
